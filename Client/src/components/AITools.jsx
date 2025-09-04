@@ -12,7 +12,7 @@ const AITools = () => {
         <p className='mt-4 max-w-xs sm:max-w-lg 2xl:max-w-xl m-auto max-sm:text-xs text-gray-600'>Everything you need to create,enhance and optimize your content with cutting-edge AI technology </p>
       </div>
 
-      <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-3 mb-16 mt-8 gap-6 px-4 mx-4' >
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-3 mb-16 mt-8 gap-6 px-4 mx-4' >
         {
           AiToolsData.map((aitool, index) => (
             <div onClick={()=>{navigate(aitool.path)}} key={index} className='group cursor-pointer py-6 px-6 rounded-lg flex flex-col' style={{

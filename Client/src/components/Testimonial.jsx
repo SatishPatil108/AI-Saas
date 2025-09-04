@@ -3,7 +3,6 @@ import { dummyTestimonialData, assets } from '../assets/assets.js';
 
 const Testimonial = () => {
     let arr = [1, 1, 1, 1, 1]
-    const [rate, setRate] = useState(5);
     return (
         <div className='mt-8 py-3 px-4 sm:px-20 xl:px-32'>
             <div className='text-center mt-16'>
@@ -11,7 +10,7 @@ const Testimonial = () => {
                 <p className='mt-4 max-w-xs sm:max-w-lg 2xl:max-w-xl m-auto max-sm:text-xs text-gray-600'>Don't just take our word for it. Here's what our <br /> users are saying.  </p>
             </div>
 
-            <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-3 mb-16 mt-8 gap-6 px-4 mx-4'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-3 mb-16 mt-8 gap-6 px-4 mx-4'>
                 {
                     dummyTestimonialData.map((testimonial, index) => (
                         <div key={index} className='group cursor-pointer py-2 px-4 rounded-lg flex flex-col' style={{
