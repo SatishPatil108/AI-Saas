@@ -170,4 +170,26 @@ export const dummyPublishedCreationData = [
         "updated_at": "2025-06-23T11:29:44.434Z",
         "__v": 1
     },
-]
+];
+
+export const footerLinks = [
+  {
+    title: "Quick Links",
+    links: [
+      { text: "Home", url: "#" },
+      { text: "About Us", url: "#" },
+      { text: "Contact Us", url: "#" },
+      { text: "Privacy policy", url: "#" },
+    ],
+  },
+  
+  {
+    title: "Follow Us",
+    links: [
+      { text: "Instagram", url: "#" },
+      { text: "Twitter", url: "#" },
+      { text: "Facebook", url: "#" },
+      { text: "YouTube", url: "#" },
+    ],
+  },
+];

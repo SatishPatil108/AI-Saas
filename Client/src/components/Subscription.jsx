@@ -1,5 +1,5 @@
 import React from 'react'
-import { CheckIcon } from 'lucide-react'
+import { CheckIcon, LucideToggleRight } from 'lucide-react'
 
 const Subscription = () => {
   return (
@@ -18,7 +18,7 @@ const Subscription = () => {
           <div className='mb-2 bg-gray-100'>
             <h1 className='font-semibold px-4 text-2xl py-2'>Free</h1>
             <h1 className='font-semibold px-4 text-2xl py-2'>$0</h1>
-            <p className='px-4 text-gray-500 py-2'>Always free</p>
+            <p className='px-4 text-gray-500 py-2 text-sm'>Always free</p>
           </div>
           <div className='bg-white h-55 p-4' style={{borderTop:" 1px solid rgba(0,0,0,0.2)",borderBottom:" 1px solid rgba(0,0,0,0.2)" }}>
             <p> <CheckIcon className='inline-block text-gray-400 me-2' />Title Generation</p>
@@ -35,7 +35,7 @@ const Subscription = () => {
           <div className='mb-2 bg-gray-100'>
             <h1 className='font-semibold px-4 text-2xl py-2'>Premium</h1>
             <h1 className='font-semibold px-4 text-2xl py-2'>$16<sup className='text-gray-400 text-sm'>/month</sup></h1>
-            <p className='px-4 text-gray-500 py-2'>Always free</p>
+            <p className='px-4 text-gray-500 py-2 text-sm flex'><LucideToggleRight className='mx-2'/>Billed annually</p>
           </div>
           <div className='bg-white h-55 p-4' style={{borderTop:" 1px solid rgba(0,0,0,0.2)",borderBottom:" 1px solid rgba(0,0,0,0.2)" }}>
             <p> <CheckIcon className='inline-block text-gray-400 me-2' />Title Generation</p>
