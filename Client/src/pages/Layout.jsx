@@ -1,11 +1,11 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import Dashboard from './Dashboard'
 
 const Layout = () => {
   return (
     <div>
-        <h1>Layout</h1>
-        <Outlet />
+      <Outlet />
     </div>
   )
 }

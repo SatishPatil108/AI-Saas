@@ -7,7 +7,7 @@ const AITools = () => {
   const navigate = useNavigate();
   return (
     <div className='py-3 px-4 sm:px-20 xl:px-32'>
-      <div className='text-center'>
+      <div className='text-center mt-20'>
         <h1 className='text-2xl sm:text-3xl md:text-3xl 2xl:text-5xl font-semibold mx-auto leading-[1.3]'>Powerful AI Tools</h1>
         <p className='mt-4 max-w-xs sm:max-w-lg 2xl:max-w-xl m-auto max-sm:text-xs text-gray-600'>Everything you need to create,enhance and optimize your content with cutting-edge AI technology </p>
       </div>
