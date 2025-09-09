@@ -1,10 +1,11 @@
 import React from 'react'
 import { AiToolsData } from '../assets/assets';
 import { useNavigate } from 'react-router-dom';
+import { useUser } from '@clerk/clerk-react'
 
-// grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 mt-6 gap-6
 const AITools = () => {
   const navigate = useNavigate();
+  const { user } = useUser();
   return (
     <div className='py-3 px-4 sm:px-20 xl:px-32'>
       <div className='text-center mt-20'>
@@ -15,13 +16,13 @@ const AITools = () => {
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-3 mb-16 mt-8 gap-6 px-4 mx-4' >
         {
           AiToolsData.map((aitool, index) => (
-            <div onClick={()=>{navigate(aitool.path)}} key={index} className='group cursor-pointer py-6 px-6 rounded-lg flex flex-col' style={{
+            <div onClick={() => user && navigate(aitool.path) } key={index} className='group cursor-pointer py-6 px-6 rounded-lg flex flex-col' style={{
               boxShadow: "0 0 5px 2px rgba(0,0,0,0.1)"
             }}>
-              
+
               <aitool.Icon className='justify-start rounded-2xl  w-12 h-12 py-3 text-white' style={
-                {backgroundImage:`linear-gradient(${aitool.bg.from},${aitool.bg.to})`}
-              }/>
+                { backgroundImage: `linear-gradient(${aitool.bg.from},${aitool.bg.to})` }
+              } />
               <h4 className='text-1xl font-semibold  leading-[1.6] py-3'>{aitool.title}</h4>
               <p className='text-sm font-medium  text-gray-500'>{aitool.description}</p>
 
