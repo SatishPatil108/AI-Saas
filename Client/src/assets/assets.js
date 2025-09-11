@@ -145,7 +145,7 @@ export const dummyPublishedCreationData = [
     {
         "id": 2,
         "user_id": "user_2yMX02PRbyMtQK6PebpjnxvRNIA",
-        "prompt": "Generate an image of A Boy Riding a bicycle on road and bicycle is from year 2201  in the style Anime style.",
+        "prompt": "Generate an image of A Boy Riding a bicycle on road and bicycle is from year 2001  in the style Anime style.",
         "content": ai_gen_img_2,
         "type": "image",
         "publish": true,
